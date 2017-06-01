@@ -4,11 +4,11 @@ android {
     compileSdkVersion 23
     buildToolsVersion "24.0.2"
     defaultConfig {
-        applicationId "k.demo.gradle"
-        minSdkVersion 22
+        applicationId "k.opt"
+        minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.6.2"
     }
     buildTypes {
         release {
