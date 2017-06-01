@@ -12,7 +12,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:ems="10"
-            android:hint="Name"
+            android:hint="Njame"
             android:inputType="textPersonName"
             />
 
