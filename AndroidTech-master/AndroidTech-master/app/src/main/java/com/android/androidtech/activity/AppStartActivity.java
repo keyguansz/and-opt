@@ -10,6 +10,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.view.View;
 import android.view.animation.Animation;
@@ -108,6 +109,7 @@ public class AppStartActivity extends Activity {
         mSetPlayer.setDuration(TIME_ANIMATION);
         mSetPlayer.play(scalex).with(scaley).with(rotation);
         mSetPlayer.start();
+
     }
 
     private Handler mStartHandler = new Handler() {

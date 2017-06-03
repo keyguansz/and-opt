@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,7 @@ public class OverDrawActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_over_draw);
         init();
+        Looper
     }
 
     private void init() {
