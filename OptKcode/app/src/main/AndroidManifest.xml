@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="k.opt"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="k.opt">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
 
     <application
+        android:name=".KApplication"
+        android:theme="@style/KTheme"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="opt"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+       >
         <activity android:name=".activity.DemoActivity">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
+            -->
         </activity>
+        <activity android:name=".ch2Draw.LayoutPerActivity">
 
+        </activity>
+        <activity android:name=".ch2Draw.OverDrawActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
