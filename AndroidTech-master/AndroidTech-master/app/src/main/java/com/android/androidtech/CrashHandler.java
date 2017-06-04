@@ -18,9 +18,7 @@ import java.util.Date;
 
 import android.os.Process;
 
-/**
- * Created by yuchengluo on 2016/6/16.
- */
+
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
     private static final String TAG = "CrashHandler";
     private static final String CRASH_FILE_NAME = "crash";
