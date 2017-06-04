@@ -1,6 +1,7 @@
 package k.opt.ch2Draw;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.RectF;
@@ -23,8 +24,10 @@ public class OverDrawActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_over_draw);
         init();
-        Looper
+
     }
+
+
 
     private void init() {
         multicardsView = (MultiCardsView) findViewById(R.id.cardview);

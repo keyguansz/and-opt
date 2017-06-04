@@ -15,6 +15,11 @@
             android:hint="Njame"
             android:inputType="textPersonName"
             />
+    <TextView
+        android:id="@+id/test_leak"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="test_leak"/>
 
 
     </RelativeLayout>

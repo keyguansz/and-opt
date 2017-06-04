@@ -4,6 +4,11 @@ import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
 
+import com.squareup.leakcanary.AndroidExcludedRefs;
+import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
+
+import k.opt.monitor.memory.LeakCanaryService;
 import k.opt.monitor.time.TimeMonitorConfig;
 import k.opt.monitor.time.TimeMonitorManager;
 
@@ -13,6 +18,7 @@ import k.opt.monitor.time.TimeMonitorManager;
 public class KApplication extends Application {
 
     private static Context mContext = null;
+    private static RefWatcher mRefWatcher = null;
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -25,10 +31,21 @@ public class KApplication extends Application {
         return mContext;
     }
 
+    /**
+     * @desc: KApplication.getRefWatcher().watch(this);
+     * @ref: 另一个需要监控的重要对象就是Fragment实例或者其他自定义的UI容器窗口组件，因为它和Activity实例一样，
+     * 可能持有大量的视图以及视图需要的资源（如Bitmap），需要监控这一类组件，可以在Fragment onDestroy方法中，
+     * 或者自定义组件的周期结束回调接口加入如下实现：
+     * @author: key.guan @ 2017/6/4
+     */
+    public static RefWatcher getRefWatcher(){
+        return mRefWatcher;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
-
+        mRefWatcher  = LeakCanary.install(this, LeakCanaryService.class, AndroidExcludedRefs.createAppDefaults().build());
         InitModule();
         TimeMonitorManager.getInstance().getTimeMonitor(TimeMonitorConfig.TIME_MONITOR_ID_APPLICATION_START)
                 .recodingTimeTag("ApplicationCreate");
@@ -62,9 +79,5 @@ public class KApplication extends Application {
       /*  DBManager.InitDB(mContext);
         CrashHandler crashHandler = new CrashHandler();
         crashHandler.init(this);*/
-      for (int i=0;i<1000*1000;i++)
-          for (int j=0;j<1000*1000;j++){
-
-          }
     }
 }
