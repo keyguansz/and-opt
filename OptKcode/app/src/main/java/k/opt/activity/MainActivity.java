@@ -44,7 +44,6 @@ public class MainActivity extends Activity {
         for (int i = 0;i<1000*1000;i++){
             test1 += i;
         }
-        ArrayMap
         TimeMonitorManager.getInstance().getTimeMonitor(TimeMonitorConfig.TIME_MONITOR_ID_JAVA)
                 .recodingTimeTag("test1 end,test2 start");
         Integer test2 = 0;
