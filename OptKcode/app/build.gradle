@@ -4,6 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion '25.0.0'
     defaultConfig {
+        multiDexEnabled true
         applicationId "k.opt"
         minSdkVersion 19
         targetSdkVersion 23
@@ -22,6 +23,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    compile 'com.android.support:multidex:1.0.1'
    // compile 'com.android.support:support-annotations：22.0.0'
 
 }
