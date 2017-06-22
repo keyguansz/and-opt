@@ -3,9 +3,9 @@ package k.opt.monitor.ui.sampling;
 import android.os.Handler;
 import android.os.HandlerThread;
 
-import com.android.androidtech.utils.GLog;
-
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import k.core.util.KLogUtil;
 
 /**
  * Created by yuchengluo on 2016/4/1.

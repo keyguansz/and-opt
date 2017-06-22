@@ -18,12 +18,13 @@ import k.core.util.KLogUtil;
  * Created by yuchengluo on 2015/4/5.
  * д��־�߳�
  */
-public class LogWriteThread implements UiPerfMonitorConfig{
+public class LogWriteThread implements UiPerfMonitorConfig {
     private Handler mWriteHandler = null;
     private final Object FILE_LOCK = new Object();
     private final SimpleDateFormat FILE_NAME_FORMATTER = new SimpleDateFormat("yyyy-MM-dd");
     private final SimpleDateFormat TIME_FORMATTER = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private final String TAG = "LogWriteThread";
+
     public void saveLog(final String loginfo) {
         getmControlHandler().post(new Runnable() {
             @Override
@@ -34,17 +35,18 @@ public class LogWriteThread implements UiPerfMonitorConfig{
             }
         });
     }
-    private void saveLog2Local(String info){
+
+    private void saveLog2Local(String info) {
         long time = System.currentTimeMillis();
         File logFile = new File(LOG_PATH + "/" + FILENAME + "-" + FILE_NAME_FORMATTER.format(time) + ".txt");
         StringBuffer mSb = new StringBuffer("/***************************************/\r\n");
         mSb.append(TIME_FORMATTER.format(time));
         mSb.append("\r\n/***************************************/\r\n");
-        mSb.append(info+ "\r\n");
-       KLogUtil.D(TAG, "saveLogToSDCard: "+ mSb.toString());
-        if(logFile.exists()){
-            writeLog4SameFile(logFile.getPath(),mSb.toString());
-        }else{
+        mSb.append(info + "\r\n");
+        KLogUtil.D(TAG, "saveLogToSDCard: " + mSb.toString());
+        if (logFile.exists()) {
+            writeLog4SameFile(logFile.getPath(), mSb.toString());
+        } else {
             BufferedWriter writer = null;
             try {
                 OutputStreamWriter out = new OutputStreamWriter(new FileOutputStream(logFile.getPath(), true), "UTF-8");
@@ -62,13 +64,13 @@ public class LogWriteThread implements UiPerfMonitorConfig{
                         writer = null;
                     }
                 } catch (Exception e) {
-                    KLogUtil.D(TAG, "saveLogToSDCard: ", e);
+                    KLogUtil.D(TAG, "saveLogToSDCard: " + e);
                 }
             }
         }
     }
+
     /**
-     *
      * @param fileName
      * @param content
      */
@@ -81,8 +83,8 @@ public class LogWriteThread implements UiPerfMonitorConfig{
             randomFile.writeBytes(content);
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            if(randomFile != null){
+        } finally {
+            if (randomFile != null) {
                 try {
                     randomFile.close();
                 } catch (IOException e) {
@@ -91,7 +93,8 @@ public class LogWriteThread implements UiPerfMonitorConfig{
             }
         }
     }
-    public void send2Server(){
+
+    public void send2Server() {
         getmControlHandler().post(new Runnable() {
             @Override
             public void run() {
@@ -99,6 +102,7 @@ public class LogWriteThread implements UiPerfMonitorConfig{
             }
         });
     }
+
     private Handler getmControlHandler() {
         if (null == mWriteHandler) {
             HandlerThread mHT = new HandlerThread("SamplerThread");

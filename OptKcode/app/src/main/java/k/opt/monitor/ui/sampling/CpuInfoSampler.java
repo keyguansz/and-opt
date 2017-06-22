@@ -2,7 +2,6 @@ package k.opt.monitor.ui.sampling;
 
 import android.util.Log;
 
-import com.android.androidtech.utils.GLog;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

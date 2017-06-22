@@ -1,8 +1,8 @@
 package k.opt.jobscheduler;
 
+
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
-import android.content.ComponentName;
 import android.content.Context;
 
 /**
@@ -26,7 +26,7 @@ class JobScheduleManager {
         mJS = (JobScheduler)mCtx.getSystemService(Context.JOB_SCHEDULER_SERVICE);
     }
     public boolean addJobScheduleTask(int task_id){
-        JobInfo.Builder builder = new JobInfo.Builder(task_id, new ComponentName("k.opt"), JobSchedulerService.class.getName());
+        JobInfo.Builder builder = null;
         switch (task_id){
             case 1:
                 builder.setPeriodic(1000);
