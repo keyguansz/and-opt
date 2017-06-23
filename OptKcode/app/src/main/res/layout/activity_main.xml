@@ -28,7 +28,12 @@
         android:layout_height="60dp"
         android:background="@color/black"
         android:text="test_anr ，sleep 15"/>
-
+    <TextView
+        android:id="@+id/test_anr_time"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        android:text="test_anr_time ，while(1)"/>
     <TextView
         android:id="@+id/test_lock"
         android:layout_width="60dp"

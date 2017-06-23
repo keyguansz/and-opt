@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
         testLeak();
         testAutoBoxing();
         testAnr();
+        testAnrTime();
         testLock();
         //FileObserver
     }
@@ -79,6 +80,20 @@ public class MainActivity extends Activity {
             }
         });
     }
+    private void testAnrTime() {
+        findViewById(R.id.test_anr_time).setOnClickListener(new View.OnClickListener() {
+            long cnt = 0;
+            @Override
+            public void onClick(View v) {
+                while (true){//耗时操作
+                    if (cnt%100000==0)
+                    Log.e("testAnrTime","cnt="+cnt++);
+                    ;
+                }
+            }
+        });
+    }
+
     private  Lock lock1 = new ReentrantLock();
     private  Lock lock2 = new ReentrantLock();
     private void testLock() {
