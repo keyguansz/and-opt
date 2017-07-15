@@ -2,10 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="k.opt">
 
-  <!--  <uses-permission
+    <!--
+        <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />-->
+        android:maxSdkVersion="18" />
+    -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="Android.permission.MOUNT_UNMOUNT_FIFESYSTEMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="Android.permission.MOUNT_UNMOUNT_FIFESYSTEMS"/>
     <package name="com.android.provision"
@@ -24,32 +28,23 @@
 
     <application
         android:name=".KApplication"
-        android:theme="@style/KTheme"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="opt"
         android:supportsRtl="true"
-       >
-        <activity android:name=".activity.MainActivity">
+        android:theme="@style/KTheme">
+        <service android:name=".monitor.memory.LeakCanaryService" />
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".ch2Draw.LayoutPerActivity" />
+        <activity android:name=".ch2Draw.OverDrawActivity" />
 
+        <activity android:name=".ch2Draw.Ch2StubActivity"/>
+        <activity android:name=".ch5Anr.Ch5AnrActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ch2Draw.LayoutPerActivity">
-
-        </activity>
-        <activity android:name=".ch2Draw.OverDrawActivity">
-         <!--   <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>-->
-        </activity>
-        <service android:name="k.opt.monitor.memory.LeakCanaryService" />
     </application>
 
 </manifest>
