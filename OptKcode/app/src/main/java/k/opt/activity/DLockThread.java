@@ -1,5 +1,10 @@
 package k.opt.activity;
 
+import android.app.Activity;
+import android.content.ComponentName;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 
 /**
@@ -44,5 +49,7 @@ public class DLockThread extends Thread{
         t2.start();
     }
 }
+
+
 
 

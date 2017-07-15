@@ -8,6 +8,19 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="Android.permission.MOUNT_UNMOUNT_FIFESYSTEMS"/>
+    <package name="com.android.provision"
+             codePath="/system/app/Provision.apk"
+             nativeLibraryPath="/data/data/com.android.provision/lib"
+             flags="1" ft="11b7e237e00" it="11b7e237e00"
+             ut="11b7e237e00" version="15" userId="10005">
+        <sigs count="1">
+            <cert index="1" />
+        </sigs>
+        <disabled-components>
+            <item name="com.android.provision.DefaultActivity" />
+        </disabled-components>
+    </package>
+
 
     <application
         android:name=".KApplication"
