@@ -15,7 +15,7 @@ public class LeakCanaryService extends DisplayLeakService{
     private final String TAG = "LeakCanaryService";
     @Override
     protected void afterDefaultHandling(HeapDump heapDump, AnalysisResult result, String leakInfo) {
-        KLogUtil.D(TAG,"afterDefaultHandling:" + leakInfo);
+        KLogUtil.D(TAG,"afterDefaulcvzftHandling:" + leakInfo);
 
         super.afterDefaultHandling(heapDump, result, leakInfo);
     }
