@@ -2699,7 +2699,7 @@ at 2017-06-23 09:33:16 -----Cmd line: /system/bin/sdcardABI: 'arm'
 
 "sdcard" sysTid=174  #00 pc 0003d6ec  /system/lib/libc.so (read+8)
   #01 pc 00002ae7  /system/bin/sdcard  #02 pc fffffffd  <unknown>----- end 170 ---------- pid 676
-at 2017-06-23 09:33:17 -----Cmd line: dji.system.launcherABI: armBuild type: optimizedZygote loaded classes=3405 post zygote classes=517Intern table: 37322 strong; 1089 weakJNI: CheckJNI is off; globals=335 (plus 1 weak)
+at 2017-06-23 09:33:17 -----Cmd line: yck.system.launcherABI: armBuild type: optimizedZygote loaded classes=3405 post zygote classes=517Intern table: 37322 strong; 1089 weakJNI: CheckJNI is off; globals=335 (plus 1 weak)
 Libraries: /system/lib/libaudioeffect_jni.so /system/lib/libboot_optimization.so /system/lib/libjavacrypto.so /system/lib/libmedia_jni.so /system/lib/librs_jni.so /system/lib/libsoundpool.so libjavacore.so (7)
 Heap: 23% free, 25MB/33MB; 50237 objectsDumping cumulative Gc timingsStart Dumping histograms for 3 iterations for marksweep + semispaceProcessMarkStack:	Sum: 59.104ms 99% C.I. 0.045ms-29.592ms Avg: 9.850ms Max: 29.801msClearCardTable:	Sum: 17.905ms 99% C.I. 3.739ms-9.040ms Avg: 5.968ms Max: 9.088msMarkRoots:	Sum: 12.544ms 99% C.I. 2.621ms-6.455ms Avg: 4.181ms Max: 6.486msUpdateAndMarkImageModUnionTable:	Sum: 5.086ms 99% C.I. 1.266ms-2.337ms Avg: 1.695ms Max: 2.345ms(Paused)EnqueueFinalizerReferences:	Sum: 705us 99% C.I. 104us-482us Avg: 235us Max: 482usSweepSystemWeaks:	Sum: 513us 99% C.I. 135us-222us Avg: 171us Max: 222usMarkStackAsLive:	Sum: 504us 99% C.I. 50us-395.500us Avg: 168us Max: 397usSweepLargeObjects:	Sum: 453us 99% C.I. 133us-164us Avg: 151us Max: 164usRevokeAllThreadLocalBuffers:	Sum: 433us 99% C.I. 41us-128us Avg: 72.166us Max: 128usImageModUnionClearCards:	Sum: 286us 99% C.I. 57us-154us Avg: 95.333us Max: 154usAllocSpaceClearCards:	Sum: 209us 99% C.I. 2us-111us Avg: 23.222us Max: 111usFinishPhase:	Sum: 187us 99% C.I. 51us-77us Avg: 62.333us Max: 77usUpdateAndMarkZygoteModUnionTable:	Sum: 116us 99% C.I. 30us-52us Avg: 38.666us Max: 52us(Paused)ProcessReferences:	Sum: 48us 99% C.I. 13us-21us Avg: 16us Max: 21usRevokeAllThreadLocalAllocationStacks:	Sum: 37us 99% C.I. 8us-20us Avg: 12.333us Max: 20usSweepAllocSpace:	Sum: 27us 99% C.I. 8us-10us Avg: 9us Max: 10usMarkReachableObjects:	Sum: 23us 99% C.I. 5us-12us Avg: 7.666us Max: 12usProcessCards:	Sum: 15us 99% C.I. 3us-8us Avg: 5us Max: 8usSweep:	Sum: 11us 99% C.I. 3us-4us Avg: 3.666us Max: 4usBindBitmaps:	Sum: 10us 99% C.I. 2us-5us Avg: 3.333us Max: 5usReclaimPhase:	Sum: 7us 99% C.I. 2us-3us Avg: 2.333us Max: 3usInitializePhase:	Sum: 5us 99% C.I. 1us-2us Avg: 1.666us Max: 2usSweepZygoteSpace:	Sum: 3us 99% C.I. 1us-1us Avg: 1us Max: 1usPreSweepingGcVerification:	Sum: 2us 99% C.I. 250ns-1000ns Avg: 666ns Max: 1000nsPostGcVerificationPaused:	Sum: 0 99% C.I. 0ns-0ns Avg: 0ns Max: 0nsDone Dumping histogramsmarksweep + semispace paused:	Sum: 98.747ms 99% C.I. 21.327ms-50.017ms Avg: 32.915ms Max: 50.017msmarksweep + semispace total time: 98.274ms mean time: 32.758msmarksweep + semispace freed: 32940 objects with total size 1397KBmarksweep + semispace throughput: 336122/s / 13MB/sTotal time spent in GC: 98.274msMean GC size throughput: 862MB/sMean GC object throughput: 2.66765e+07 objects/sTotal number of allocations 2671848Total bytes allocated 110MBFree memory 7MBFree memory until GC 7MBFree memory until OOME 166MBTotal memory 33MBMax memory 192MBTotal mutator paused time: 98.747msTotal time waiting for GC to complete: 4.473msDALVIK THREADS (21):
 
@@ -2958,8 +2958,8 @@ Heap: 23% free, 25MB/33MB; 50237 objectsDumping cumulative Gc timingsStart Dumpi
 
 "mali-hist-dump" prio=5 (not attached)
   | sysTid=1057 nice=-4 cgrp=bg_non_interactive  | state=S schedstat=( 10377577322 71547460 7549 ) utm=955 stm=82 core=1 HZ=100----- end 676 ---------- pid 1240
-at 2017-06-23 09:33:17 -----Cmd line: dji.go.v4ABI: armBuild type: optimizedZygote loaded classes=3405 post zygote classes=3841Intern table: 41744 strong; 2500 weakJNI: CheckJNI is off; globals=383 (plus 2 weak)
-Libraries: /system/app/webview/lib/arm/libwebviewchromium.so /system/lib/libaudioeffect_jni.so /system/lib/libboot_optimization.so /system/lib/libjavacrypto.so /system/lib/libmedia_jni.so /system/lib/librs_jni.so /system/lib/libsoundpool.so /system/lib/libusbdec.so /system/lib/libwebviewchromium_plat_support.so /system/priv-app/DJI-GO4/lib/arm/libBugly.so /system/priv-app/DJI-GO4/lib/arm/libCertResourcesPkg.so /system/priv-app/DJI-GO4/lib/arm/libFlyForbid.so /system/priv-app/DJI-GO4/lib/arm/libGroudStation.so /system/priv-app/DJI-GO4/lib/arm/libMAPSJNI.so /system/priv-app/DJI-GO4/lib/arm/libNlpResourcePkg.so /system/priv-app/DJI-GO4/lib/arm/libPositioningResourcePkg.so /system/priv-app/DJI-GO4/lib/arm/libSDKRelativeJNI.so /system/priv-app/DJI-GO4/lib/arm/libcrypto_here.so /system/priv-app/DJI-GO4/lib/arm/libdjivideo.so /system/priv-app/DJI-GO4/lib/arm/libgnustl_shared.so /system/priv-app/DJI-GO4/lib/arm/libjcore112.so /system/priv-app/DJI-GO4/lib/arm/libos_adaptation.context.so /system/priv-app/DJI-GO4/lib/arm/libos_adaptation.network.so /system/priv-app/DJI-GO4/lib/arm/libsqlcipher.so /system/priv-app/DJI-GO4/lib/arm/libssl_here.so /system/priv-app/DJI-GO4/lib/arm/libstlport_shared.so /system/priv-app/DJI-GO4/lib/arm/libudt.so /system/priv-app/DJI-GO4/lib/arm/libudtjni.so libjavacore.so (29)
+at 2017-06-23 09:33:17 -----Cmd line: yck.kdapp.v4ABI: armBuild type: optimizedZygote loaded classes=3405 post zygote classes=3841Intern table: 41744 strong; 2500 weakJNI: CheckJNI is off; globals=383 (plus 2 weak)
+Libraries: /system/app/webview/lib/arm/libwebviewchromium.so /system/lib/libaudioeffect_jni.so /system/lib/libboot_optimization.so /system/lib/libjavacrypto.so /system/lib/libmedia_jni.so /system/lib/librs_jni.so /system/lib/libsoundpool.so /system/lib/libusbdec.so /system/lib/libwebviewchromium_plat_support.so /system/priv-app/yck-GO4/lib/arm/libBugly.so /system/priv-app/yck-GO4/lib/arm/libCertResourcesPkg.so /system/priv-app/yck-GO4/lib/arm/libFlyForbid.so /system/priv-app/yck-GO4/lib/arm/libGroudStation.so /system/priv-app/yck-GO4/lib/arm/libMAPSJNI.so /system/priv-app/yck-GO4/lib/arm/libNlpResourcePkg.so /system/priv-app/yck-GO4/lib/arm/libPositioningResourcePkg.so /system/priv-app/yck-GO4/lib/arm/libSDKRelativeJNI.so /system/priv-app/yck-GO4/lib/arm/libcrypto_here.so /system/priv-app/yck-GO4/lib/arm/libyckvideo.so /system/priv-app/yck-GO4/lib/arm/libgnustl_shared.so /system/priv-app/yck-GO4/lib/arm/libjcore112.so /system/priv-app/yck-GO4/lib/arm/libos_adaptation.context.so /system/priv-app/yck-GO4/lib/arm/libos_adaptation.network.so /system/priv-app/yck-GO4/lib/arm/libsqlcipher.so /system/priv-app/yck-GO4/lib/arm/libssl_here.so /system/priv-app/yck-GO4/lib/arm/libstlport_shared.so /system/priv-app/yck-GO4/lib/arm/libudt.so /system/priv-app/yck-GO4/lib/arm/libudtjni.so libjavacore.so (29)
 Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dumping histograms for 1 iterations for sticky concurrent mark sweepFreeList:	Sum: 14.590ms 99% C.I. 53us-277us Avg: 199.863us Max: 277usMarkConcurrentRoots:	Sum: 11.060ms 99% C.I. 0.013ms-11.047ms Avg: 5.530ms Max: 11.047msMarkRootsCheckpoint:	Sum: 8.572ms 99% C.I. 2.559ms-6.013ms Avg: 4.286ms Max: 6.013msScanGrayAllocSpaceObjects:	Sum: 7.883ms 99% C.I. 0.110ms-6.778ms Avg: 1.970ms Max: 6.895msAllocSpaceClearCards:	Sum: 4.277ms 99% C.I. 0.100ms-2.576ms Avg: 1.069ms Max: 2.587msSweepArray:	Sum: 2.589ms 99% C.I. 2.589ms-2.589ms Avg: 2.589ms Max: 2.589msReMarkRoots:	Sum: 2.145ms 99% C.I. 2.145ms-2.145ms Avg: 2.145ms Max: 2.145msMarkingPhase:	Sum: 2.044ms 99% C.I. 2.044ms-2.044ms Avg: 2.044ms Max: 2.044msImageModUnionClearCards:	Sum: 1.202ms 99% C.I. 329us-873us Avg: 601us Max: 873usScanGrayImageSpaceObjects:	Sum: 735us 99% C.I. 329us-406us Avg: 367.500us Max: 406us(Paused)ScanGrayAllocSpaceObjects:	Sum: 648us 99% C.I. 109us-539us Avg: 324us Max: 539usSweepSystemWeaks:	Sum: 628us 99% C.I. 628us-628us Avg: 628us Max: 628usMarkNonThreadRoots:	Sum: 332us 99% C.I. 96us-236us Avg: 166us Max: 236us(Paused)ScanGrayImageSpaceObjects:	Sum: 322us 99% C.I. 322us-322us Avg: 322us Max: 322usResetStack:	Sum: 220us 99% C.I. 220us-220us Avg: 220us Max: 220usRevokeAllThreadLocalAllocationStacks:	Sum: 175us 99% C.I. 175us-175us Avg: 175us Max: 175usFinishPhase:	Sum: 58us 99% C.I. 58us-58us Avg: 58us Max: 58usProcessCards:	Sum: 51us 99% C.I. 18us-33us Avg: 25.500us Max: 33us(Paused)PausePhase:	Sum: 37us 99% C.I. 37us-37us Avg: 37us Max: 37usPreCleanCards:	Sum: 34us 99% C.I. 34us-34us Avg: 34us Max: 34usMarkRoots:	Sum: 23us 99% C.I. 23us-23us Avg: 23us Max: 23usReclaimPhase:	Sum: 19us 99% C.I. 19us-19us Avg: 19us Max: 19usScanGrayZygoteSpaceObjects:	Sum: 17us 99% C.I. 4us-13us Avg: 8.500us Max: 13usEnqueueFinalizerReferences:	Sum: 14us 99% C.I. 14us-14us Avg: 14us Max: 14usBindBitmaps:	Sum: 13us 99% C.I. 13us-13us Avg: 13us Max: 13usInitializePhase:	Sum: 9us 99% C.I. 9us-9us Avg: 9us Max: 9usFindDefaultSpaceBitmap:	Sum: 7us 99% C.I. 7us-7us Avg: 7us Max: 7usForwardSoftReferences:	Sum: 6us 99% C.I. 6us-6us Avg: 6us Max: 6us(Paused)ScanGrayZygoteSpaceObjects:	Sum: 4us 99% C.I. 4us-4us Avg: 4us Max: 4us(Paused)ProcessMarkStack:	Sum: 3us 99% C.I. 3us-3us Avg: 3us Max: 3usPreSweepingGcVerification:	Sum: 2us 99% C.I. 2us-2us Avg: 2us Max: 2usDone Dumping histogramssticky concurrent mark sweep paused:	Sum: 3.426ms 99% C.I. 3.426ms-3.426ms Avg: 3.426ms Max: 3.426mssticky concurrent mark sweep total time: 57.820ms mean time: 57.820mssticky concurrent mark sweep freed: 73634 objects with total size 5MBsticky concurrent mark sweep throughput: 1.29182e+06/s / 91MB/sStart Dumping histograms for 1 iterations for marksweep + semispaceProcessMarkStack:	Sum: 99.146ms 99% C.I. 0.016ms-98.224ms Avg: 49.573ms Max: 99.145msMarkRoots:	Sum: 28.237ms 99% C.I. 28.237ms-28.237ms Avg: 28.237ms Max: 28.237msClearCardTable:	Sum: 15.693ms 99% C.I. 15.693ms-15.693ms Avg: 15.693ms Max: 15.693msUpdateAndMarkImageModUnionTable:	Sum: 2.539ms 99% C.I. 2.539ms-2.539ms Avg: 2.539ms Max: 2.539msRevokeAllThreadLocalBuffers:	Sum: 777us 99% C.I. 171us-606us Avg: 388.500us Max: 606usAllocSpaceClearCards:	Sum: 421us 99% C.I. 18us-337us Avg: 140.333us Max: 337usSweepSystemWeaks:	Sum: 418us 99% C.I. 418us-418us Avg: 418us Max: 418usImageModUnionClearCards:	Sum: 230us 99% C.I. 230us-230us Avg: 230us Max: 230usFinishPhase:	Sum: 125us 99% C.I. 125us-125us Avg: 125us Max: 125usSweepLargeObjects:	Sum: 117us 99% C.I. 117us-117us Avg: 117us Max: 117usRevokeAllThreadLocalAllocationStacks:	Sum: 114us 99% C.I. 114us-114us Avg: 114us Max: 114usMarkStackAsLive:	Sum: 72us 99% C.I. 72us-72us Avg: 72us Max: 72usSweepAllocSpace:	Sum: 62us 99% C.I. 62us-62us Avg: 62us Max: 62us(Paused)EnqueueFinalizerReferences:	Sum: 57us 99% C.I. 57us-57us Avg: 57us Max: 57usUpdateAndMarkZygoteModUnionTable:	Sum: 52us 99% C.I. 52us-52us Avg: 52us Max: 52us(Paused)ProcessReferences:	Sum: 44us 99% C.I. 44us-44us Avg: 44us Max: 44usProcessCards:	Sum: 16us 99% C.I. 16us-16us Avg: 16us Max: 16usSwapBitmaps:	Sum: 11us 99% C.I. 11us-11us Avg: 11us Max: 11usMarkReachableObjects:	Sum: 10us 99% C.I. 10us-10us Avg: 10us Max: 10usBindBitmaps:	Sum: 9us 99% C.I. 9us-9us Avg: 9us Max: 9usMarkingPhase:	Sum: 8us 99% C.I. 8us-8us Avg: 8us Max: 8usSweep:	Sum: 5us 99% C.I. 5us-5us Avg: 5us Max: 5usZygoteModUnionClearCards:	Sum: 4us 99% C.I. 4us-4us Avg: 4us Max: 4usInitializePhase:	Sum: 3us 99% C.I. 3us-3us Avg: 3us Max: 3usPreGcVerificationPaused:	Sum: 1us 99% C.I. 1us-1us Avg: 1us Max: 1usPostGcVerificationPaused:	Sum: 0 99% C.I. 0ns-0ns Avg: 0ns Max: 0nsDone Dumping histogramsmarksweep + semispace paused:	Sum: 148.396ms 99% C.I. 148.396ms-148.396ms Avg: 148.396ms Max: 148.396msmarksweep + semispace total time: 148.177ms mean time: 148.177msmarksweep + semispace freed: 1272 objects with total size 91KBmarksweep + semispace throughput: 8594.59/s / 616KB/sTotal time spent in GC: 205.997msMean GC size throughput: 4GB/sMean GC object throughput: 6.44454e+07 objects/sTotal number of allocations 13462818Total bytes allocated 956MBFree memory 4MBFree memory until GC 4MBFree memory until OOME 495MBTotal memory 21MBMax memory 512MBTotal mutator paused time: 151.822msTotal time waiting for GC to complete: 5.975msDALVIK THREADS (84):
 
 "main" prio=5 tid=1 Native  | group="main" sCount=1 dsCount=0 obj=0x746e5700 self=0xb70c42b8  | sysTid=1240 nice=-6 cgrp=bg_non_interactive sched=0/0 handle=0xb6f2abec  | state=S schedstat=( 2898477575 6096162654 4379 ) utm=234 stm=55 core=0 HZ=100  | stack=0xbe35f000-0xbe361000 stackSize=8MB  | held mutexes=  native: #00 pc 0003c670  /system/lib/libc.so (__epoll_pwait+20)
@@ -3290,7 +3290,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at android.os.Looper.loop(Looper.java:122)
   at android.os.HandlerThread.run(HandlerThread.java:61)
 
-"dji_background_thread" prio=5 tid=32 Native  | group="main" sCount=1 dsCount=0 obj=0x32c09120 self=0xb7316ca8  | sysTid=1380 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb7317278  | state=S schedstat=( 30155910615 129780836742 139618 ) utm=1823 stm=1192 core=0 HZ=100  | stack=0xa336b000-0xa336d000 stackSize=1036KB  | held mutexes=  native: #00 pc 00012960  /system/lib/libc.so (syscall+28)
+"yck_background_thread" prio=5 tid=32 Native  | group="main" sCount=1 dsCount=0 obj=0x32c09120 self=0xb7316ca8  | sysTid=1380 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb7317278  | state=S schedstat=( 30155910615 129780836742 139618 ) utm=1823 stm=1192 core=0 HZ=100  | stack=0xa336b000-0xa336d000 stackSize=1036KB  | held mutexes=  native: #00 pc 00012960  /system/lib/libc.so (syscall+28)
   native: #01 pc 000a99f3  /system/lib/libart.so (art::ConditionVariable::Wait(art::Thread*)+98)
   native: #02 pc 0029382f  /system/lib/libart.so (art::GoToRunnable(art::Thread*)+798)
   native: #03 pc 00087bb1  /system/lib/libart.so (art::JniMethodEnd(unsigned int, art::Thread*)+16)
@@ -3300,7 +3300,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at android.os.Looper.loop(Looper.java:122)
   at android.os.HandlerThread.run(HandlerThread.java:61)
 
-"DJILinkDaemonService" prio=5 tid=33 Native  | group="main" sCount=1 dsCount=0 obj=0x32c09190 self=0xb72e4928  | sysTid=1381 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb72fcfe8  | state=S schedstat=( 23095177 8186101 100 ) utm=2 stm=0 core=0 HZ=100  | stack=0xa3267000-0xa3269000 stackSize=1036KB  | held mutexes=  native: #00 pc 0003c670  /system/lib/libc.so (__epoll_pwait+20)
+"yckLinkDaemonService" prio=5 tid=33 Native  | group="main" sCount=1 dsCount=0 obj=0x32c09190 self=0xb72e4928  | sysTid=1381 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb72fcfe8  | state=S schedstat=( 23095177 8186101 100 ) utm=2 stm=0 core=0 HZ=100  | stack=0xa3267000-0xa3269000 stackSize=1036KB  | held mutexes=  native: #00 pc 0003c670  /system/lib/libc.so (__epoll_pwait+20)
   native: #01 pc 00014761  /system/lib/libc.so (epoll_pwait+26)
   native: #02 pc 0001476f  /system/lib/libc.so (epoll_wait+6)
   native: #03 pc 000124df  /system/lib/libutils.so (android::Looper::pollInner(int)+98)
@@ -3321,7 +3321,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
   at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
-  at dji.midware.i.s.run(unavailable:45)
+  at yck.midware.i.s.run(unavailable:45)
 
 "pool-5-thread-1" prio=5 tid=34 Waiting  | group="main" sCount=1 dsCount=0 obj=0x32c079a0 self=0xb732a0c0  | sysTid=1384 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb7326830  | state=S schedstat=( 3068317 12039937 29 ) utm=0 stm=0 core=2 HZ=100  | stack=0xa3163000-0xa3165000 stackSize=1036KB  | held mutexes=
   at java.lang.Object.wait!(Native method)
@@ -3346,7 +3346,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
   at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
-  at dji.midware.i.s.run(unavailable:45)
+  at yck.midware.i.s.run(unavailable:45)
 
 "Timer-0" prio=5 tid=38 TimedWaiting  | group="main" sCount=1 dsCount=0 obj=0x32c09200 self=0xb7329b40  | sysTid=1388 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb72f8120  | state=S schedstat=( 24352227406 71773280456 83481 ) utm=1458 stm=977 core=0 HZ=100  | stack=0xa2ac5000-0xa2ac7000 stackSize=1036KB  | held mutexes=
   at java.lang.Object.wait!(Native method)
@@ -3385,7 +3385,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
   at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:410)
-  at dji.midware.i.s.run(unavailable:45)
+  at yck.midware.i.s.run(unavailable:45)
 
 "Timer-2" prio=5 tid=41 TimedWaiting  | group="main" sCount=1 dsCount=0 obj=0x32c093c0 self=0xb72dffd0  | sysTid=1396 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb72e0748  | state=S schedstat=( 24001394752 73555729421 83937 ) utm=1434 stm=966 core=2 HZ=100  | stack=0xa23a9000-0xa23ab000 stackSize=1036KB  | held mutexes=
   at java.lang.Object.wait!(Native method)
@@ -3434,7 +3434,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at android.os.Looper.loop(Looper.java:122)
   at android.os.HandlerThread.run(HandlerThread.java:61)
 
-"dji_sdk_cache_timer_for_repeat_get" prio=5 tid=30 Native  | group="main" sCount=1 dsCount=0 obj=0x32c09580 self=0xb73491e0  | sysTid=1405 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb734a918  | state=S schedstat=( 209216193795 221583898858 557199 ) utm=14552 stm=6369 core=2 HZ=100  | stack=0xa5055000-0xa5057000 stackSize=1036KB  | held mutexes=  native: #00 pc 00012960  /system/lib/libc.so (syscall+28)
+"yck_sdk_cache_timer_for_repeat_get" prio=5 tid=30 Native  | group="main" sCount=1 dsCount=0 obj=0x32c09580 self=0xb73491e0  | sysTid=1405 nice=0 cgrp=bg_non_interactive sched=0/0 handle=0xb734a918  | state=S schedstat=( 209216193795 221583898858 557199 ) utm=14552 stm=6369 core=2 HZ=100  | stack=0xa5055000-0xa5057000 stackSize=1036KB  | held mutexes=  native: #00 pc 00012960  /system/lib/libc.so (syscall+28)
   native: #01 pc 000a99f3  /system/lib/libart.so (art::ConditionVariable::Wait(art::Thread*)+98)
   native: #02 pc 0029382f  /system/lib/libart.so (art::GoToRunnable(art::Thread*)+798)
   native: #03 pc 00087bb1  /system/lib/libart.so (art::JniMethodEnd(unsigned int, art::Thread*)+16)
@@ -3608,7 +3608,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at java.lang.Thread.sleep(Thread.java:1031)
   - locked <0x21d42e7a> (a java.lang.Object)
   at java.lang.Thread.sleep(Thread.java:985)
-  at dji.pilot2.publics.a.b$4.run(unavailable:170)
+  at yck.pilot2.publics.a.b$4.run(unavailable:170)
 
 "FinalHttp #3" prio=4 tid=62 Waiting  | group="main" sCount=1 dsCount=0 obj=0x32c07e20 self=0xb71a7f20  | sysTid=1499 nice=10 cgrp=bg_non_interactive sched=0/0 handle=0xb72d1f58  | state=S schedstat=( 1641927 920696 4 ) utm=0 stm=0 core=0 HZ=100  | stack=0x9f0fe000-0x9f100000 stackSize=1036KB  | held mutexes=
   at java.lang.Object.wait!(Native method)
@@ -3646,7 +3646,7 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at android.os.MessageQueue.nativePollOnce(Native method)
   at android.os.MessageQueue.next(MessageQueue.java:143)
   at android.os.Looper.loop(Looper.java:122)
-  at com.dji.a.d.c$a.run(unavailable:111)
+  at com.yck.a.d.c$a.run(unavailable:111)
 
 "AsyncTask #5" prio=5 tid=66 Waiting  | group="main" sCount=1 dsCount=0 obj=0x32c07ee0 self=0xb7352dc0  | sysTid=1506 nice=10 cgrp=bg_non_interactive sched=0/0 handle=0xb73532a0  | state=S schedstat=( 3041339 2090795 4 ) utm=0 stm=0 core=1 HZ=100  | stack=0x9ecee000-0x9ecf0000 stackSize=1036KB  | held mutexes=
   at java.lang.Object.wait!(Native method)
@@ -3951,37 +3951,37 @@ Heap: 20% free, 16MB/21MB; 187262 objectsDumping cumulative Gc timingsStart Dump
   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:72)
   at com.android.org.chromium.content.common.CleanupReference$1.run(CleanupReference.java:50)
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1372 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 47355 390894 2 ) utm=0 stm=0 core=3 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1373 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 32144 0 1 ) utm=0 stm=0 core=3 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1374 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 73759 0 3 ) utm=0 stm=0 core=3 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1375 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 34727 0 1 ) utm=0 stm=0 core=3 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1376 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 66010 376257 3 ) utm=0 stm=0 core=1 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1377 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 45059 0 3 ) utm=0 stm=0 core=1 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1378 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 43624 0 1 ) utm=0 stm=0 core=1 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1379 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 38458 0 1 ) utm=0 stm=0 core=1 HZ=100
 
-"DJILinkDaemonSe" prio=5 (not attached)
+"yckLinkDaemonSe" prio=5 (not attached)
   | sysTid=1390 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 5226477624 78943078294 55561 ) utm=102 stm=420 core=1 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1398 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 2627409395918 6571653328074 42932787 ) utm=19975 stm=242765 core=1 HZ=100
 
-"dji.go.v4" prio=5 (not attached)
+"yck.kdapp.v4" prio=5 (not attached)
   | sysTid=1399 nice=0 cgrp=bg_non_interactive  | state=S schedstat=( 2630626150384 6581679622398 42924490 ) utm=19878 stm=243184 core=0 HZ=100
 
 "AsyncTask #3" prio=5 (not attached)

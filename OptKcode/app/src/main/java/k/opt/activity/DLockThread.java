@@ -8,11 +8,8 @@ import android.provider.Settings;
 import android.util.Log;
 
 /**
- * @author :key.guan
  * @package :k.opt.activity
- * @date : 2017/6/22
- * Description:
- * Copyright (c) 2017. DJI All Rights Reserved.
+
  */
 
 public class DLockThread extends Thread{

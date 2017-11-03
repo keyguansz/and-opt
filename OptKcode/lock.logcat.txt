@@ -28,19 +28,19 @@
 06-22 21:31:13.502 486-513/system_process W/ProcessCpuTracker: Skipping unknown process pid 17771
 06-22 21:31:13.545 486-513/system_process I/art: Explicit concurrent mark sweep GC freed 33886(1539KB) AllocSpace objects, 7(174KB) LOS objects, 33% free, 12MB/18MB, paused 689us total 39.909ms
 06-22 21:31:14.101 486-513/system_process I/Process: Sending signal. PID: 1240 SIG: 3
-06-22 21:31:14.101 1240-1248/dji.go.v4 I/art: Thread[5,tid=1248,WaitingInMainSignalCatcherLoop,Thread*=0xb70caec0,peer=0x32c070a0,"Signal Catcher"]: reacting to signal 3
+06-22 21:31:14.101 1240-1248/K.dapp.v4 I/art: Thread[5,tid=1248,WaitingInMainSignalCatcherLoop,Thread*=0xb70caec0,peer=0x32c070a0,"Signal Catcher"]: reacting to signal 3
 06-22 21:31:14.301 486-513/system_process I/Process: Sending signal. PID: 676 SIG: 3
-06-22 21:31:14.301 676-683/dji.system.launcher I/art: Thread[5,tid=683,WaitingInMainSignalCatcherLoop,Thread*=0xb70caec0,peer=0x12c070a0,"Signal Catcher"]: reacting to signal 3
-06-22 21:31:14.419 676-683/dji.system.launcher I/art: Wrote stack traces to '/data/anr/traces.txt'
+06-22 21:31:14.301 676-683/K.system.launcher I/art: Thread[5,tid=683,WaitingInMainSignalCatcherLoop,Thread*=0xb70caec0,peer=0x12c070a0,"Signal Catcher"]: reacting to signal 3
+06-22 21:31:14.419 676-683/K.system.launcher I/art: Wrote stack traces to '/data/anr/traces.txt'
 06-22 21:31:14.427 486-513/system_process E/ActivityManagerService: ANR in k.opt (k.opt/.activity.MainActivity)
                                                                     PID: 16231
                                                                     Reason: Input dispatching timed out (Waiting to send non-key event because the touched window has not finished processing certain input events that were delivered to it over 500.0ms ago.  Wait queue length: 2.  Wait queue head age: 28739.7ms.)
                                                                     Load: 0.7 / 0.68 / 0.7
                                                                     CPU usage from 4406ms to -5013ms ago:
                                                                       12% 486/system_server: 7.3% user + 5.5% kernel / faults: 5620 minor
-                                                                      12% 1240/dji.go.v4: 4.1% user + 8.4% kernel / faults: 3785 minor
+                                                                      12% 1240/K.dapp.v4: 4.1% user + 8.4% kernel / faults: 3785 minor
                                                                       0.1% 161/debuggerd: 0% user + 0% kernel / faults: 3529 minor
-                                                                      5.2% 676/dji.system.launcher: 2.6% user + 2.5% kernel / faults: 2016 minor
+                                                                      5.2% 676/K.system.launcher: 2.6% user + 2.5% kernel / faults: 2016 minor
                                                                       3.2% 1833/adbd: 0.2% user + 3% kernel / faults: 994 minor
                                                                       3% 16231/k.opt: 2.3% user + 0.7% kernel / faults: 1453 minor
                                                                       2.2% 639/com.android.phone: 0.6% user + 1.5% kernel / faults: 1624 minor
@@ -66,10 +66,10 @@
                                                                       0% 17166/logcat: 0% user + 0% kernel / faults: 28 minor
                                                                     16% TOTAL: 6.8% user + 9% kernel + 0% iowait + 0% softirq
                                                                     CPU usage from 4139ms to 4651ms later:
-                                                                      11% 1240/dji.go.v4: 0% user + 11% kernel / faults: 265 minor
-                                                                        6.4% 1399/dji.go.v4: 0% user + 6.4% kernel
-                                                                        4.8% 1398/dji.go.v4: 1.6% user + 3.2% kernel
-                                                                      6.3% 676/dji.system.launcher: 3.1% user + 3.1% kernel / faults: 97 minor
+                                                                      11% 1240/K.dapp.v4: 0% user + 11% kernel / faults: 265 minor
+                                                                        6.4% 1399/K.dapp.v4: 0% user + 6.4% kernel
+                                                                        4.8% 1398/K.dapp.v4: 1.6% user + 3.2% kernel
+                                                                      6.3% 676/K.system.launcher: 3.1% user + 3.1% kernel / faults: 97 minor
                                                                         6.3% 892/Timer-0: 3.1% user + 3.1% kernel
                                                                       5.7% 486/system_server: 1.9% user + 3.8% kernel / faults: 13 minor
                                                                         1.9% 513/ActivityManager: 0% user + 1.9% kernel
@@ -89,7 +89,7 @@
 06-22 21:31:14.450 486-513/system_process D/ViewRootImpl: onAttachToWindow register content observer attrs=WM.LayoutParams{(0,0)(wrapxwrap)mPosX=0mPosY=0mHScale=1.0mVScale=1.0 align=UNDEFINE taskId=-1 gr=#ffffffff sim=#120 ty=2003 fl=#1860002 pfl=0x110 fmt=-3 wanim=0x103046a or=0 surfaceInsets=Rect(80, 80 - 80, 80) needsMenuKey=2packageName=androidtoken=null}
 06-22 21:31:14.467 486-513/system_process D/ViewRootImpl: 1248<<<<<< BACK FROM relayoutWM.LayoutParams{(0,0)(wrapxwrap)mPosX=0mPosY=0mHScale=1.0mVScale=1.0 align=UNDEFINE taskId=-1 gr=#ffffffff sim=#120 ty=2003 fl=#1860002 pfl=0x110 fmt=-3 wanim=0x103046a or=0 surfaceInsets=Rect(80, 80 - 80, 80) needsMenuKey=2packageName=androidtoken=null}
 06-22 21:31:14.467 486-2576/system_process I/OpenGLRenderer: Initialized EGL, version 1.4
-06-22 21:31:14.756 1240-1248/dji.go.v4 I/art: Wrote stack traces to '/data/anr/traces.txt'
+06-22 21:31:14.756 1240-1248/K.dapp.v4 I/art: Wrote stack traces to '/data/anr/traces.txt'
 06-22 21:32:00.060 657-657/com.android.systemui D/ViewRootImpl: 1920<<<<<< BACK FROM relayoutnull
 06-22 21:32:05.029 486-513/system_process W/ProcessCpuTracker: Skipping unknown process pid 18640
 06-22 21:33:00.055 657-657/com.android.systemui D/ViewRootImpl: 1920<<<<<< BACK FROM relayoutnull

@@ -5,13 +5,7 @@ import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.Context;
 
-/**
- * @author :key.guan
- * @package :k.opt.jobscheduler
- * @date : 2017/6/5
- * Description:
- * Copyright (c) 2017. DJI All Rights Reserved.
- */
+
 
 class JobScheduleManager {
     private static final JobScheduleManager ourInstance = new JobScheduleManager();
